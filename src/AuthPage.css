@@ -1,0 +1,56 @@
+/* src/AuthPage.css */
+/* src/pages/AuthPage.css */
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: transparent; /* Instead of var(--bg) */
+}
+
+
+.auth-card {
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--bg); /* Optional: or a contrast color like white/grey */
+  color: var(--text);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Dark Theme */
+body.dark .auth-card {
+  background-color: #2c2c2ccc;
+  color: #f0f0f0;
+}
+
+/* Eye Comfort Theme */
+body.eyecomfort .auth-card {
+  background-color: #fdf6e3cc;
+  color: #333;
+}
+
+.auth-card input,
+.auth-card button {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #818FB4;
+}
+
+.auth-card button {
+  background-color: var(--text);
+  color: var(--bg);
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.auth-card button:hover {
+  opacity: 0.9;
+}

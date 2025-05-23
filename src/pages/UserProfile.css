@@ -1,0 +1,40 @@
+/* Profile Page */
+/* Profile Page */
+.profile-container {
+  max-width: 700px;
+  margin:700px auto;
+  padding: 20px;
+  padding-top: 20px; /* ✅ Pushes content down to prevent overlap */
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  color: var(--text-color);
+  text-align: center;
+}
+
+/* User Info Card */
+.profile-card {
+  background-color: var(--card-bg);
+  max-width: 700px;
+  padding: 20px;
+  margin:100px auto;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  text-align: left;
+}
+
+.profile-card h2 {
+  margin-top: 20px;
+  color: var(--text-color);
+}
+
+.profile-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-card li {
+  padding: 8px;
+  font-size: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}

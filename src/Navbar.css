@@ -1,0 +1,89 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  height: 64px;
+  background: var(--bg);
+  color: var(--text);
+  box-shadow: var(--navbar-shadow); /* Dynamic shadow */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  border-radius: 12px;
+  margin: 16px;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+/* Brand Name */
+.nav-brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--text);
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Navbar Buttons */
+.nav-links a,
+.nav-links button {
+  background: none;
+  border: 2px solid var(--text);
+  color: var(--text);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 6px 18px;
+  border-radius: 9999px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.theme-toggle-btn span {
+  font-size: 1.5rem;
+}
+
+.theme-toggle-btn:hover {
+  opacity: 0.8;
+}
+
+/* --- THEME-SPECIFIC BOX SHADOWS --- */
+body.light {
+  --bg: #ffffff;
+  --text: #222222;
+  --navbar-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Softer shadow */
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #eeeeee;
+  --navbar-shadow: 0 6px 16px rgba(255, 255, 255, 0.25); /* Glowing effect for dark mode */
+}
+
+body.eyecomfort {
+  --bg: #fdf6e3;
+  --text: #333333;
+  --navbar-shadow: 0 3px 10px rgba(91, 75, 58, 0.3); /* Gentle warmth */
+}

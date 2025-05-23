@@ -1,0 +1,88 @@
+/* Full-screen container */
+.focus-container {
+  height: 100vh; /* Full viewport height */
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Added padding for better spacing */
+}
+
+/* Enlarged Intro Card */
+.focus-card {
+  background-color: white;
+  padding: 60px; /* Increased padding for a larger appearance */
+  border-radius: 16px; /* Slightly larger border radius */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 60%; /* Expanded width */
+  max-width: 900px; /* Prevents excessive width on large screens */
+}
+
+/* Larger Title */
+.focus-title {
+  font-size: 3.5rem; /* Increased size */
+  font-weight: bold; /* Make it visually strong */
+  margin-bottom: 20px; /* Increased spacing */
+}
+
+/* Larger Subtitle */
+.focus-subtitle {
+  font-size: 1.5rem; /* Slightly larger */
+  margin-bottom: 40px;
+  color: #444; /* Darker shade for better readability */
+}
+
+/* Bigger Button */
+.focus-button {
+  padding: 15px 30px; /* Larger button */
+  font-size: 1.2rem; /* Bigger font size */
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover Effect */
+.focus-button:hover {
+  background-color: #43a047;
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .focus-card {
+    width: 80%;
+    padding: 50px;
+  }
+  
+  .focus-title {
+    font-size: 2.8rem;
+  }
+
+  .focus-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .focus-button {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .focus-card {
+    width: 90%;
+    padding: 40px;
+  }
+
+  .focus-title {
+    font-size: 2.4rem;
+  }
+
+  .focus-subtitle {
+    font-size: 1.2rem;
+  }
+}

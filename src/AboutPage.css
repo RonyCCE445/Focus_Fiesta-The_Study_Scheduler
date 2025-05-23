@@ -1,0 +1,48 @@
+.about-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.about-container h1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.features ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.features li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.developer-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* Theme variables for About card background */
+body.light {
+  --card-bg: #f2f2f2;
+  --text: #333333;
+}
+
+body.dark {
+  --card-bg: #2c2c2c;
+  --text: #f0f0f0;
+}
+
+body.eyecomfort {
+  --card-bg: #f8f3e9;
+  --text: #5b4b3a;
+}

@@ -1,0 +1,178 @@
+/* Theme-based variables for form background and text */
+body.light {
+  --card-bg: #f2f2f2;
+  --text: #333333;
+}
+
+body.dark {
+  --card-bg: #2c2c2c;
+  --text: #f0f0f0;
+}
+
+body.eyecomfort {
+  --card-bg: #f8f3e9;
+  --text: #5b4b3a;
+}
+
+/* Form container – structured like AboutPage */
+.form-container {
+  max-width: 700px;
+  margin: 20px auto; /* Reduced top margin */
+  padding: 20px;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: inherit;
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-sizing: border-box;
+  position: relative;
+  top: -20px; /* Adjusts form positioning to reduce extra gap */
+}
+
+/* Headings for form steps */
+.form-container h1,
+.form-container h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+/* Subject input fields */
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  width: 100%;
+  padding: 8px 12px;
+  margin: 6px 0 14px 0;
+  border: 2px solid var(--text);
+  border-radius: 6px;
+  background-color: transparent;
+  color: var(--text);
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: var(--text);
+  outline: none;
+  box-shadow: 0 0 6px var(--text);
+}
+
+/* Difficulty Buttons - Color-coded styles */
+button.easy {
+  background-color: #4caf50; /* Green */
+  color: white;
+  border: none;
+}
+
+button.medium {
+  background-color: #ffcc00; /* Yellow */
+  color: black;
+  border: none;
+}
+
+button.difficult {
+  background-color: #e63946; /* Red */
+  color: white;
+  border: none;
+}
+
+button.easy:hover,
+button.medium:hover,
+button.difficult:hover {
+  opacity: 0.8;
+}
+
+/* General Buttons */
+button {
+  background: none;
+  border: 2px solid var(--text);
+  color: var(--text);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 24px;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--text);
+  color: var(--card-bg);
+}
+
+/* Subject Group Styling */
+.subject-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.subject-group input[type="text"] {
+  flex: 1 1 200px;
+  min-width: 150px;
+}
+
+.subject-group input[type="number"] {
+  width: 120px;
+}
+
+/* Remove Subject Button */
+.remove-subject-btn {
+  background-color: transparent;
+  border: 2px solid var(--text);
+  color: var(--text);
+  padding: 6px 14px;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-subject-btn:hover {
+  background-color: var(--text);
+  color: var(--card-bg);
+}
+
+/* Radio Buttons */
+.radio-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Form Navigation */
+.form-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-navigation button {
+  width: 120px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  .subject-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  input {
+    width: 100% !important;
+  }
+
+  button {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 12px;
+  }
+}
