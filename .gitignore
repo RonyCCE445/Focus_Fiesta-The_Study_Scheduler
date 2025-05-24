@@ -1,24 +1,43 @@
-# Logs
+# 🔹 Logs & Debug Files
 logs
 *.log
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# 🔹 Dependency Folders
+node_modules/
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# 🔹 Build & Cache Files
+dist/
+dist-ssr/
+.cache/
+build/
+.next/
+
+# 🔹 Environment Variables (🚨 Prevent secrets from leaking)
+.env
+.env.local
+.env.production
+.env.development
+
+# 🔹 OS & Editor Files (Prevents system clutter)
 .DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# 🔹 Miscellaneous Files
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
-*.sw?
+
+# 🔹 Ignore generated output
+out/
+coverage/
+
+# 🔹 Prevent accidental commits of sensitive files
+supabaseClient.js
