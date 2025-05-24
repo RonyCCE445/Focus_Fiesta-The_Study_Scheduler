@@ -16,7 +16,7 @@ dist-ssr/
 build/
 .next/
 
-# 🔹 Environment Variables (🚨 Prevent secrets from leaking)
+# 🔹 Environment Variables (Prevent secrets from leaking)
 .env
 .env.local
 .env.production
